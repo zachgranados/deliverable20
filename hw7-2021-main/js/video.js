@@ -15,7 +15,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	console.log("Play Video");
 
-	var vol = document.querySelector("#slider").getAttribute("value");
+	var vol = document.querySelector("#slider").value;
 	console.log(vol)
 
 	document.querySelector("#volume").innerHTML = vol + "%";
@@ -85,7 +85,7 @@ document.querySelector("#slider").addEventListener("input", function(){
 
 	// console.log(newVol);
 
- document.querySelector("#volume").innerHTML = newVol + "%";
+ document.querySelector("#volume").innerHTML = newVol + '%';
 });
 
 
